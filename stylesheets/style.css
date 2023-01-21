@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow:auto;
+}
+.navbar{
+    height:50px;
+    background-color: black;
+}
+
+.main {
+    /*top: 0;*/
+    /*bottom: 0;*/
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/ferrari.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.firstTextBlock {
+    margin: 60px 40px;
+    padding: 50px 50px 50px 50px;
+    border-radius: 7px;
+    background-color: whitesmoke;
+}
+
+p{
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.navbarLeftDiv{
+    width: 50px;
+    margin-left: 20px;
+    float: left;
+}
+
+.navbarHyperLink {
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+    height: 50px;
+    padding: 12px 12px;
+}
+
+.navbarRightDiv {
+    height: 50px;
+}
+
+.navbarRightDiv>ul {
+    float: right;
+    display: block;
+    height: 50px;
+}
+
+.navbarRightDiv>ul>li {
+    float: left;
+    display: block;
+}
+
+
+
+/*Feedback Page Control*/
+.feedbackText{
+    display: block;
+    height: 30px;
+    width: 100%;
+    padding: 5px 15px;
+    font-size: 18px;
+    border-radius: 7px;
+    margin-bottom:20px;
+    line-height: 36px;
+}
+
+textarea.feedbackText{
+    font-family: inherit;
+    height: auto;
+}
+
+.feedbackButton{
+    margin-left: 15px;
+    padding: 5px 15px;
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    border-color: darkgrey;
+    background-color: darkgray;
+    color: white;
+}
+
+/*Site Map Control*/
+.sitemap{
+    background-image: unset;
+    background-color: black;
+}
+/*gallery control*/
+.gallery{
+    background: black;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    top: 50px;
+    bottom: 0;
+    /*left: 0;*/
+    /*right: 0;*/
+}
+.gallery-top{
+    width: 100%;
+    height:40%;
+    background-color: dimgrey;
+}
+.gallery-top>p{
+    font-size: 60px;
+    text-align: center;
+    padding-top: 170px;
+}
+
+.gallery-bottom{
+    height: auto;
+    background-color: white;
+}
+
+.items-wrapper-1{
+    float: left;
+    width: 30%;
+    margin-left: 15%;
+    margin-right: 5%;
+    margin-top: 100px;
+}
+
+.items-wrapper-2{
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 15%;
+    margin-top: 100px;
+}
+
+.gallery-item{
+    background-color: gray;
+    float: left;
+    width:100%;
+    height: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.item-photo>img{
+    width: 100%;
+    height:75%;
+}
+
+/*video control*/
+.firstTextBlock>h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.storyBoardImage{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Share Button Container */
+.shareButtonContainer{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 80%;
+    transform: translateY(-50%);
+}
+
+.shareButtonContainer a i {
+    font-size: 32px;
+}
+
+.shareButtonContainer a {
+    margin: 12px 0;
+    transition:500ms;
+}
+
+.shareButtonContainer a:hover{
+    transform: scale(1.2);
+}
+
+.shareButtonContainer .fa-facebook{
+    color: #3b5998;
+}
+
+.shareButtonContainer .fa-whatsapp{
+    color: #075e54;
+}
+
+.shareButtonContainer .fa-twitter{
+    color: #1da1f2;
+}
+
+/* media feeds area*/
+
+.mediaFeedsArea{
+    background: black;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    top: 50px;
+    bottom: 0;
+    width: 100%;
+    height:100%;
+}
+
+/* validation page*/
+.validationImages{
+    height: auto;
+    width: 100%;
+}
+
+.validationImagesArea{
+    background: black;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height:100%;
+}
+
+.validationImagesArea>p{
+    background-color: #fff;
+    margin-bottom: 0px;
+    text-align: center;
+    line-height: 2.0;
+    font-weight: bold;
+}
+
+/* original Page*/
+.originalImages{
+    height: 1080px;
+    width: 1920px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.originalContent{
+    color: aliceblue;
+    line-height: 2.0;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Print friendly button*/
+#changeCSS{
+    background-color: red; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

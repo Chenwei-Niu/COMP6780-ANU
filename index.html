@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Me and My Passion</title>
+    <link rel="stylesheet" href="stylesheets/style.css" id="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="main">
+        <div class = "navbar">
+            <div class="navbarLeftDiv">
+                <a href="index.html" class="navbarHyperLink">Home</a>
+            </div>
+
+            <div class="navbarRightDiv">
+                <ul>
+                    
+                    
+                    <li><a href="reflectivePage/reflectivePage.html" class="navbarHyperLink">Reflection</a></li>
+                    <li><a href="validationPage/validationPage.html" class="navbarHyperLink">Validation</a></li>
+                    <li><a href="originalPage/originalPage.html" class="navbarHyperLink">Original</a></li>
+                    <li><a href="mediaFeeds/mediaFeeds.html" class="navbarHyperLink">Media Feeds</a></li>
+                    <li><a href="video/video.html" class="navbarHyperLink">Video</a></li>
+                    <li><a href="gallery/gallery.html" class="navbarHyperLink">Gallery</a></li>
+                    <li><a href="sourceLog/sourceLog.html" class="navbarHyperLink">Source Log</a></li>
+                    <li><a href="siteMap/siteMap.html" class="navbarHyperLink">Site Map</a></li>
+                    <li><a href="feedback/feedback.html" class="navbarHyperLink">Feedback</a></li>
+                    <li><button id="changeCSS" >Change Style</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="shareButtonContainer">
+            <a href="#" class="facebookButton">
+                <i class = "fab fa-facebook"></i>
+            </a>
+            <a href="#" class="twitterButton">
+                <i class = "fab fa-twitter"></i>
+            </a>
+            <a href="#" class="whatsappButton">
+                <i class = "fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <div class="firstTextBlock">
+            <p>Hello, my name is Chenwei Niu, a new student in Master of Computing (advanced) in ANU.
+                I am enthusiastic in programming and driving cars. Excepting develop programs,
+                driving cars should be my first passion. That’s why after I graduated from the University of Melbourne,
+                I went to a company as an embedded software engineer developing the MCU software for several electrical cars in China. </p>
+            <p>Electric cars will no doubt gradually and completely replace fuel cars over the next 20-30 years.
+                This is because electricity is both a renewable and clean source of energy. In addition to this,
+                electric cars also have more horsepower and acceleration because they are not tied to a gearbox.
+                As tempting as the smooth handling and power of an electric car is,
+                I'm still more obsessed with driving a conventional car.
+                The reason is that the handling feel of a conventional fuel car is made up of the engine and gearbox
+                and the tuning of the car manufacturer. This unique feeling cannot be simulated by an electric motor.</p>
+            <p>Both manual and automatic cars have shift operations, via gear levers or shift paddles.
+                When you downshift to make up the gas and depress the accelerator pedal,
+                the car revs up, and you feel a strong pushback. Then find the right moment to up-shift.
+                This whole process is the feeling of operation that a conventional car can give.
+                When I was in China, I used to drive my car on mountain roads because they have more curves which
+                practicing the driving skills.</p>
+            <p>Apart from that, the most significant reason that driving has become one of my greatest passions is that
+                it allows me to forget about my worries in life and concentrate on the road in front of me.
+                This is one of the few precious moments of solitude and exactly what every adult needs.</p>
+        </div>
+
+
+
+    </div>
+    
+
+
+
+    <script src="./javascript/main.js"></script>
+    <script>
+        const button = document.getElementById("changeCSS");
+        button.addEventListener("click", function(){
+            var str = document.getElementById("stylesheet").href;
+            console.log(document.getElementById("stylesheet").href);
+            if (str.search("stylesheets/style.css") != -1) {
+                document.getElementById("stylesheet").href = "stylesheets/print.css";
+            } else {
+                console.log(222)
+                document.getElementById("stylesheet").href = "stylesheets/style.css";
+            }
+            
+            
+            console.log(111)
+            // $('link[href="stylesheets/style.css"]').attr("href","stylesheets/print.css");
+      });
+      </script>
+</body>
+</html>

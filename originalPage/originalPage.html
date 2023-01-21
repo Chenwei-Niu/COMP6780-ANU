@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classic Color of Porsche</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+<div class="main">
+    <div class="validationImagesArea">
+        <div class = "navbar">
+            <div class="navbarLeftDiv">
+                <a href="../index.html" class="navbarHyperLink">Home</a>
+            </div>
+    
+            <div class="navbarRightDiv">
+                <ul>
+                    <li><a href="../reflectivePage/reflectivePage.html" class="navbarHyperLink">Reflection</a></li>
+                    <li><a href="../validationPage/validationPage.html" class="navbarHyperLink">Validation</a></li>
+                    <li><a href="../originalPage/originalPage.html" class="navbarHyperLink">Original</a></li>
+                    <li><a href="../mediaFeeds/mediaFeeds.html" class="navbarHyperLink">Media Feeds</a></li>
+                    <li><a href="../video/video.html" class="navbarHyperLink">Video</a></li>
+                    <li><a href="../gallery/gallery.html" class="navbarHyperLink">Gallery</a></li>
+                    <li><a href="../sourceLog/sourceLog.html" class="navbarHyperLink">Source Log</a></li>
+                    <li><a href="../siteMap/siteMap.html" class="navbarHyperLink">Site Map</a></li>
+                    <li><a href="../feedback/feedback.html" class="navbarHyperLink">Feedback</a></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="originalContent">
+            <p>Porsche 911 is one of my favorite car models</p>
+        <p>I want to use this original page to present the all classic colors of this car,</p>
+            <p>Please select one of the colour cards below</p>
+        <p id="color">The color is :</p>
+        </div>
+
+        <div class="colorBox" style="text-align:center;">
+            <ul id="colorcards" style="background-color: #000; flex-direction: row;display: flex; list-style-type: none; text-align: center; padding-left: 1050px; padding-right: auto;">
+                <li class="gtSilver"><span style="display: inline-block;background-color: rgb(204, 204, 204);height: 60px;width:60px"></span></li>
+                <li class="blackMetallic"><span style="display: flex;background-color: rgb(0, 0, 0);height: 60px;width:60px"></span></li>
+                <li class="gentianBlueMetallic"><span style="display: flex;background-color: rgb(0, 25, 75);height: 60px;width:60px"></span></li>
+                <li class="carmineRed"><span style="display: flex;background-color: rgb(153, 0, 51);height: 60px;width:60px"></span></li>
+                <li class="sharkBlue"><span style="display: flex;background-color: rgb(0, 109, 209);height: 60px;width:60px"></span></li>
+                <li class="pythonGreen"><span style="display: flex;background-color: rgb(60, 147, 67);height: 60px;width:60px"></span></li>
+                <li class="crayon"><span style="display: flex;background-color: rgb(199, 199, 191);height: 60px;width:60px"></span></li>
+            </ul>
+        </div>
+        
+        <img src="../images/gtSilver.png" alt="" class = "originalImages">
+
+        
+
+    </div>
+        
+
+</div>
+
+<script>
+    const imgSrc = document.querySelector(".originalImages");
+    const color = document.getElementById("color");
+
+    const blackMetallic = document.querySelector(".blackMetallic");
+    const gtSilver = document.querySelector(".gtSilver");
+    const gentianBlueMetallic = document.querySelector(".gentianBlueMetallic");
+    const carmineRed = document.querySelector(".carmineRed");
+    const sharkBlue = document.querySelector(".sharkBlue");
+    const pythonGreen = document.querySelector(".pythonGreen");
+    const crayon = document.querySelector(".crayon");
+
+    blackMetallic.addEventListener('click', function handling(){
+        imgSrc.setAttribute("src", `../images/blackMetallic.png`);
+        color.innerText = "The color is : Black Metallic"
+        console.log("click on black")
+    });
+    gtSilver.addEventListener('click', function handling(){
+        imgSrc.setAttribute("src", `../images/gtSilver.png`);
+        color.innerText = "The color is : GT Silver"
+    });
+    gentianBlueMetallic.addEventListener('click', function handling(){
+        imgSrc.setAttribute("src", `../images/gentianBlueMetallic.png`);
+        color.innerText = "The color is : Gentian Blue Metallic"
+    });
+    carmineRed.addEventListener('click', function handling(){
+        imgSrc.setAttribute("src", `../images/carmineRed.png`);
+        color.innerText = "The color is : Carmine Red"
+    });
+    sharkBlue.addEventListener('click', function handling(){
+        imgSrc.setAttribute("src", `../images/sharkBlue.png`);
+        color.innerText = "The color is : Shark Blue"
+    });
+    pythonGreen.addEventListener('click', function handling(){
+        imgSrc.setAttribute("src", `../images/pythonGreen.png`);
+        color.innerText = "The color is : Python Green"
+    });
+    crayon.addEventListener('click', function handling(){
+        imgSrc.setAttribute("src", `../images/crayon.png`);
+        color.innerText = "The color is : Crayon"
+    });
+
+    var colorcards = document.getElementById("colorcards");
+    colorcards.style.paddingLeft = document.documentElement.clientWidth/2-210 + "px";
+    console.log(colorcards.style.paddingLeft)
+    window.onresize = function(){
+        colorcards.style.paddingLeft = document.documentElement.clientWidth/2-210 + "px";
+        console.log(colorcards.style.paddingLeft)
+    }
+
+</script>
+</body>
+</html>
